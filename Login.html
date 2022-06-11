@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="login.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
+
+    <style>
+ 
+
+        .input2::placeholder {
+
+            color: rgba(82, 25, 25, 0.507);
+            opacity: 1;
+            /* Firefox */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+
+        }
+
+        .input2::placeholder {
+
+            color: rgba(143, 106, 106, 0.507);
+            opacity: 1;
+            /* Firefox */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 14px;
+            text-align: center;
+
+        }
+
+        .input2 {
+            line-height: 1.1;
+            height: calc(1.1em + 1rem + 2px);
+            padding: .2rem 0.5rem;
+            width: 80%;
+            transform: -50% 50%;
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        .input2:focus {
+            font-size: 15px;
+            border: transparent;
+            background: rgba(207, 45, 45, 0.534);
+            border-radius: 0px 40px 20px 0;
+            border-color: rgb(100, 151, 245);
+            height: calc(1.5em + 1rem + 2px);
+            padding: .5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            translate: 500ms;
+            transform: 1s;
+            width: 100%;
+            border-radius: 0px 40px 20px 0px;
+
+        }
+    </style>
+
+
+    <title>Hyrje</title>
+
+</head>
+<header>
+    <!-- background:#6dcc72; -->
+    <nav class="navbar fixed-top navbar-dark bg-dark" style="  display:flex;position:fixed;justify-content: center">
+
+        <img id="logo2-banner" src="logo2-banner.png" style="width: 300px;overflow: hidden;">
+    </nav>
+
+</header>
+
+<body>
+    <!-- Button trigger modal -->
+    <div
+        style="background-color: #343a40;display: grid;position:fixed;justify-content: center;height: 100%;width: 100%;">
+  
+        <button class="btn" data-toggle="modal" data-target="#exampleModalCenter" style="border: none;width:200vh">
+               
+            <small style="color: white;font-weight: 500;letter-spacing: 5px;font-size: 2.2em;">LOGIN</small>
+         
+            <span class="load loading"></span>
+        </button>
+       
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="background-color: transparent;">
+                <div class="modal-header" style="background-color: #343a40 ;border-color:#343a40 ;border: none; ">
+                    <button type="button" class="close" data-dismiss="modal" style="z-index:99999999999;"
+                        aria-label="Close">
+                        <span aria-hidden="true" style="color: #ffffff">&times;</span>
+                    </button>
+                </div>
+
+                <form class="login-form text-center form" method="post" action="/Login/Index"
+                    style="background-color: #ffffff ; min-width: 350px; padding: 0 1px 20px 1px;">
+
+
+
+
+                    <div style="display: block ruby ;margin-top: 20px;position: absolute;margin-top: -40px;left: 45%;top:0%">
+                        <div
+                            style="background-color: darkgray;border-radius: 50%;width: 80px;height: 80px;position:relative;display:grid;align-items: center;align-self: center;align-content: center;box-shadow:0px 0px 0px 5px rgb(248, 248, 248);">
+                            <img src="user.png" type="button" id="sidebarCollapse" width='100%' height="100%"
+                                style="align-self: center;padding: 2px;position: absolute" />
+                        </div>
+
+                    </div>
+                    <span
+                        style="display: block;font-size:24px;color: white;font-style:oblique;font-family:Arial ;font-weight: bolder"></span>
+                    <div class="form-group"
+                        style="display:flex;flex-direction:column; justify-content:flex-start ;justify-items: center;align-items: center">
+                        <input type="text" placeholder="Emri i Perdoruesit.."
+                            class="form-control form-control-lg input2"
+                            style="margin-top: 10px;border-radius:1px;text-align: center;font-size: 11px;border:transparent;background: rgba(255, 255, 255, 0.993);border-radius: 0px 40px 20px 0; "
+                            name="Username" id="Username" required min="3">
+                    </div>
+                    <div class="form-group"
+                        style="display:flex;flex-direction:column; justify-content:flex-start;justify-items: center;align-items: center">
+                        <input type="password" placeholder="Fjalekalimi.." class="form-control form-control-lg input2"
+                            style="border-radius:1px;text-align: center;font-size: 11px;border:transparent;background: rgba(255, 255, 255, 0.911);border-radius: 0px 40px 20px 0; "
+                            name="Password" id="Password" required min="7">
+                    </div>
+
+                    <button type="submit" class="btn mt-1  btn-lg btn-custom btn-block text-uppercase mainbtn2"
+                        style="    width: 50%;left: 25%; background: linear-gradient(to right, #86d3a3 0%, #98e472 100%);;border-radius:0.5px;color: azure;top: 0;position: relative;border-radius: 20px 20px 20px 20px;border:transparent">Hyr</button>
+                    <span style="font-size:12px">Ky website perdor "cookies" per te permirsuar eksperiencen tuaj</span>
+                    <button type="submit" class="btn mt-1  btn-sm btn-custom btn-block text-uppercase mainbtn2"
+                        style=" width: 30%;left: 35%; background: linear-gradient(to right, #29bdbd 0%, #66d4ff 100%);;border-radius:0.5px;color: azure;top: 0;position: relative;border-radius: 20px 20px 20px 20px;border:transparent">SIGN
+                        UP</button>
+
+                </form>
+
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $('#sidebarCollapse').on('click', function () {
+
+                $('#content').toggleClass('active');
+
+
+            });
+        });
+
+        const btns = document.querySelectorAll('btnnn');
+        const btn_txt = document.querySelectorAll('.btnnn_text');
+        btns.forEach((items) => {
+            items.addEventListener('click', (evt) => {
+                evt.target.classList.add('activeLoading');
+                console.log(btn_txt.innerHTML);
+            });
+        });
+    </script>
+</body>
+
+</html>
